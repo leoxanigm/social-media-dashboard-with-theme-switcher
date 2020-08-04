@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="false">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social Media Dashboard with theme switcher</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <div class="header-title-container">
+          <h1 class="title main-title">Social Media Dashboard</h1>
+          <p class="follower-stat">Total Followers: 23,004</p>
+        </div>
+        <div class="toggle-button">
+          <input type="checkbox" value="" id="dark-mode-toggle" />
+          <label for="dark-mode-toggle" id="dark-mode-toggle-label"
+            >Dark Mode</label
+          >
+        </div>
+      </header>
+
+      <main>
+        <section class="main-dashboard">
+          <div class="main-dashboard-container">
+            <div class="stat-card facebook">
+              <div class="handle">
+                <img src="img/icon-facebook.svg" alt="facebook" class="social-media-icon" />
+                <p class="address">@nathanf</p>
+              </div>
+              <div class="follower-count">
+                <p class="followers">1987</p>
+                <p class="lead">Followers</p>
+              </div>
+              <div class="follower-change">
+                <p class="stat-change positive">12 Today</p>
+              </div>
+            </div>
+            <!-- end social media -->
+            <div class="stat-card twitter">
+              <div class="handle">
+                <img src="img/icon-twitter.svg" alt="twitter" class="social-media-icon" />
+                <p class="address">@nathanf</p>
+              </div>
+              <div class="follower-count">
+                <p class="followers">1044</p>
+                <p class="lead">Followers</p>
+              </div>
+              <div class="follower-change">
+                <p class="stat-change positive">99 Today</p>
+              </div>
+            </div>
+            <!-- end social media -->
+            <div class="stat-card instagram">
+              <div class="handle">
+                <img src="img/icon-instagram.svg" alt="instagram" class="social-media-icon" />
+                <p class="address">@realnathanf</p>
+              </div>
+              <div class="follower-count">
+                <p class="followers">11k</p>
+                <p class="lead">Followers</p>
+              </div>
+              <div class="follower-change">
+                <p class="stat-change positive">1099 Today</p>
+              </div>
+            </div>
+            <!-- end social media -->
+            <div class="stat-card youtube">
+              <div class="handle">
+                <img src="img/icon-youtube.svg" alt="youtube" class="social-media-icon" />
+                <p class="address">Nathan F.</p>
+              </div>
+              <div class="follower-count">
+                <p class="followers">8239</p>
+                <p class="lead">Subscribers</p>
+              </div>
+              <div class="follower-change">
+                <p class="stat-change negative">144 Today</p>
+              </div>
+            </div>
+            <!-- end social media -->
+          </div>
+        </section>
+        <!-- end main dashboard -->
+        <section class="overview-dashboard">
+          <h2 class="title overview-title">
+            Overview - <span class="date">Today</span>
+          </h2>
+          <div class="overview-dashboard-container">
+            <div class="stat-card facebook">
+              <div class="card-header">
+                <h5 class="title stat-title">Page Views</h5>
+                <img
+                  src="img/icon-facebook.svg"
+                  alt="facebook"
+                  class="social-media-icon"
+                />
+              </div>
+              <div class="card-body">
+                <p class="stat">87</p>
+                <p class="stat-change positive">3%</p>
+              </div>
+            </div>
+            <!-- end stat card -->
+            <div class="stat-card facebook">
+              <div class="card-header">
+                <h5 class="title stat-title">Likes</h5>
+                <img
+                  src="img/icon-facebook.svg"
+                  alt="facebook"
+                  class="social-media-icon"
+                />
+              </div>
+              <div class="card-body">
+                <p class="stat">52</p>
+                <p class="stat-change negative">2%</p>
+              </div>
+            </div>
+            <!-- end stat card -->
+            <div class="stat-card instagram">
+              <div class="card-header">
+                <h5 class="title stat-title">Likes</h5>
+                <img
+                  src="img/icon-instagram.svg"
+                  alt="instagram"
+                  class="social-media-icon"
+                />
+              </div>
+              <div class="card-body">
+                <p class="stat">5462</p>
+                <p class="stat-change positive">2257%</p>
+              </div>
+            </div>
+            <!-- end stat card -->
+            <div class="stat-card instagram">
+              <div class="card-header">
+                <h5 class="title stat-title">Profile Views</h5>
+                <img
+                  src="img/icon-instagram.svg"
+                  alt="instagram"
+                  class="social-media-icon"
+                />
+              </div>
+              <div class="card-body">
+                <p class="stat">52k</p>
+                <p class="stat-change positive">1375%</p>
+              </div>
+            </div>
+            <!-- end stat card -->
+            <div class="stat-card twitter">
+              <div class="card-header">
+                <h5 class="title stat-title">Retweets</h5>
+                <img
+                  src="img/icon-twitter.svg"
+                  alt="twitter"
+                  class="social-media-icon"
+                />
+              </div>
+              <div class="card-body">
+                <p class="stat">117</p>
+                <p class="stat-change positive">303%</p>
+              </div>
+            </div>
+            <!-- end stat card -->
+            <div class="stat-card twitter">
+              <div class="card-header">
+                <h5 class="title stat-title">Likes</h5>
+                <img
+                  src="img/icon-twitter.svg"
+                  alt="twitter"
+                  class="social-media-icon"
+                />
+              </div>
+              <div class="card-body">
+                <p class="stat">507</p>
+                <p class="stat-change positive">553%</p>
+              </div>
+            </div>
+            <!-- end stat card -->
+            <div class="stat-card youtube">
+              <div class="card-header">
+                <h5 class="title stat-title">Likes</h5>
+                <img
+                  src="img/icon-youtube.svg"
+                  alt="youtube"
+                  class="social-media-icon"
+                />
+              </div>
+              <div class="card-body">
+                <p class="stat">107</p>
+                <p class="stat-change negative">19%</p>
+              </div>
+            </div>
+            <!-- end stat card -->
+            <div class="stat-card youtube">
+              <div class="card-header">
+                <h5 class="title stat-title">Total Views</h5>
+                <img
+                  src="img/icon-youtube.svg"
+                  alt="youtube"
+                  class="social-media-icon"
+                />
+              </div>
+              <div class="card-body">
+                <p class="stat">1407</p>
+                <p class="stat-change negative">12%</p>
+              </div>
+            </div>
+            <!-- end stat card -->
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/leoxanigm">Zelalem Alemu</a>.
+    </div>
+
+    <script>
+      window.addEventListener('load', () => {
+        const checkbox = document.getElementById('dark-mode-toggle');
+        const htmlEl = document.getElementsByTagName('html')[0];
+        const toggleLabelEl = document.getElementById('dark-mode-toggle-label');
+
+        if ( !!window.localStorage.darkMode_socialMediaDashboard && window.localStorage.darkMode_socialMediaDashboard === "true" ) {
+          htmlEl.setAttribute('data-dark', 'true');
+        }
+
+        checkbox.addEventListener('change', () => {
+
+          if ( htmlEl.getAttribute('data-dark') === 'false' ) {
+            htmlEl.setAttribute('data-dark', 'true');
+            setTimeout(() => {
+              toggleLabelEl.textContent = 'Light Mode';
+            }, 200);
+            window.localStorage.darkMode_socialMediaDashboard = true;
+          } else {
+            htmlEl.setAttribute('data-dark', 'false');
+            setTimeout(() => {
+              toggleLabelEl.textContent = 'Dark Mode';
+            }, 200);
+            window.localStorage.darkMode_socialMediaDashboard = false;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
